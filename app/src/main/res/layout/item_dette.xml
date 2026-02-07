@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ✅ NOM DU CLIENT -->
+        <TextView
+            android:id="@+id/txtClientNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👤 Traoré Amadou"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible"/>
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pain et lait"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Montant -->
+        <TextView
+            android:id="@+id/txtMontant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50 000 FCFA"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Statut -->
+        <TextView
+            android:id="@+id/txtStatut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EN_COURS"
+            android:textSize="14sp"
+            android:textColor="#FF9800"
+            android:background="#FFF3E0"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- ✅ BOUTONS D'ACTION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <!-- Bouton Voir -->
+            <Button
+                android:id="@+id/btnVoir"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="👁️ Voir"
+                android:textSize="12sp"
+                android:backgroundTint="#9C27B0"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Bouton Modifier -->
+            <Button
+                android:id="@+id/btnModifier"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="✏️"
+                android:textSize="16sp"
+                android:backgroundTint="#2196F3"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Bouton Supprimer -->
+            <Button
+                android:id="@+id/btnSupprimer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="🗑️"
+                android:textSize="16sp"
+                android:backgroundTint="#F44336"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Carnet_Dette</string>
+    <string name="search_hint">Rechercher un client</string>
+    <string name="desc_logout">Déconnexion</string>
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+
+</resources>

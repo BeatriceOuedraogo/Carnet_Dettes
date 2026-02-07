@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- donner la permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Carnet_Dette"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+
+        <activity
+            android:name=".ClientDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditClientActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".DetteDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".ClientDetailsActivity" />
+        <activity
+            android:name=".AddClientActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".AddDetteActivity"
+            android:exported="false"
+            android:parentActivityName=".ClientDetailsActivity" />
+
+
+        <activity
+            android:name=".AddPaiementActivity"
+            android:exported="false"
+            android:parentActivityName=".DetteDetailsActivity" />
+        <activity
+            android:name=".ClientsEndettesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".AllDettesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".AllPaiementsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddDetteRapideActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PaiementActivity"
+            android:exported="false"
+            android:parentActivityName=".DetteDetailsActivity" />
+        <activity
+            android:name=".EditPaiementActivity"
+            android:exported="false"
+            android:parentActivityName=".DetteDetailsActivity" />
+        <activity
+            android:name=".ListPaiementActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity android:name=".DetteListActivity" android:exported="false" />
+        <activity
+            android:name=".EditDetteActivity"
+            android:exported="false"
+            android:parentActivityName=".DetteListActivity" />
+        <activity
+            android:name=".ClientListActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+
+</manifest>

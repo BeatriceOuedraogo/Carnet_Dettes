@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Titre -->
+        <TextView
+            android:id="@+id/txtTitrePaiement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paiements"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"/>
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"/>
+
+        <!-- RecyclerView pour les paiements -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPaiements"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:layout_marginBottom="80dp"/>
+
+        <!-- Message si aucun paiement -->
+        <TextView
+            android:id="@+id/txtNoPaiements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Aucun paiement enregistré"
+            android:textSize="16sp"
+            android:textColor="#999999"
+            android:padding="32dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- Bouton flottant pour ajouter un paiement -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddPaiement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="36dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Ajouter un paiement"
+        app:tint="@android:color/white"
+        app:backgroundTint="#4CAF50"
+        app:elevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="12dp"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Tableau de bord" />
+    </group>
+
+    <item android:title="Gestion des clients">
+        <menu>
+            <item
+                android:id="@+id/nav_clients"
+                android:icon="@android:drawable/ic_menu_my_calendar"
+                android:title="Liste des clients" />
+            <item
+                android:id="@+id/nav_add_client"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Ajouter un client" />
+            <item
+                android:id="@+id/nav_clients_endettes"
+                android:icon="@android:drawable/ic_menu_agenda"
+                android:title="⚠ Clients endettés" />
+        </menu>
+    </item>
+
+    <item android:title="Gestion des dettes">
+        <menu>
+            <item
+                android:id="@+id/nav_all_dettes"
+                android:icon="@android:drawable/ic_menu_recent_history"
+                android:title="Toutes les dettes" />
+            <item
+                android:id="@+id/nav_add_dette"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Nouvelle dette" />
+            <item
+                android:id="@+id/nav_dettes_en_cours"
+                android:icon="@android:drawable/ic_menu_today"
+                android:title="Dettes en cours" />
+
+            <item
+                android:id="@+id/nav_dettes_payees"
+                android:icon="@android:drawable/ic_menu_save"
+                android:title="Dettes payées" />
+        </menu>
+    </item>
+
+    <item android:title="Gestion des Paiements">
+        <menu>
+            <item
+                android:id="@+id/nav_all_paiements"
+                android:icon="@android:drawable/ic_menu_month"
+                android:title="Liste des paiements" />
+            <item
+                android:id="@+id/nav_add_paiement_menu"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="Enregistrer un paiement" />
+            <item
+                android:id="@+id/nav_historique"
+                android:icon="@android:drawable/ic_menu_recent_history"
+                android:title="Historique complet" />
+        </menu>
+    </item>
+
+    <item android:title="Options">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="Mon profil" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Déconnexion" />
+        </menu>
+    </item>
+
+</menu>

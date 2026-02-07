@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nom du client -->
+        <TextView
+            android:id="@+id/txtClientNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👤 Traoré Amadou"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Description de la dette -->
+        <TextView
+            android:id="@+id/txtDetteDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📄 Pain et lait"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Montant et Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/txtMontant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5 000 FCFA"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"/>
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30/01/2026"
+                android:textSize="14sp"
+                android:textColor="#666666"/>
+
+        </LinearLayout>
+
+        <!-- Mode de paiement -->
+        <TextView
+            android:id="@+id/txtMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📱 Mobile Money"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Boutons d'action -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <!-- Bouton Voir Dette -->
+            <Button
+                android:id="@+id/btnVoirDette"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="👁️ Voir"
+                android:textSize="12sp"
+                android:backgroundTint="#9C27B0"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.Material3.Button"/>
+
+            <!-- Bouton Modifier -->
+            <Button
+                android:id="@+id/btnModifier"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="✏️"
+                android:textSize="16sp"
+                android:backgroundTint="#2196F3"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.Material3.Button"/>
+
+            <!-- Bouton Supprimer -->
+            <Button
+                android:id="@+id/btnSupprimer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="🗑️"
+                android:textSize="16sp"
+                android:backgroundTint="#F44336"
+                style="@style/Widget.Material3.Button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

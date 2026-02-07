@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSurfaceVariant"
+    android:paddingTop="32dp">
+
+    <!-- Toolbar Material Design -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Tous les clients endettés"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <!-- ProgressBar circulaire Material -->
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:indeterminate="true"
+        app:indicatorColor="?attr/colorPrimary"
+        android:visibility="gone" />
+
+    <!-- Message si vide -->
+    <TextView
+        android:id="@+id/txtNoDettes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎉 Aucun client avec des dettes en cours"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnSurface"
+        android:gravity="center"
+        android:padding="40dp"
+        android:visibility="gone" />
+
+    <!-- Liste des clients avec dettes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDettes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nom du client -->
+        <TextView
+            android:id="@+id/txtClientNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 Traoré Amadou"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Téléphone -->
+        <TextView
+            android:id="@+id/txtTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📞 70 00 00 00"
+            android:textSize="14sp"
+            android:textColor="@color/material_on_surface_emphasis_medium"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Nombre de dettes -->
+        <TextView
+            android:id="@+id/txtNbDettes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 dette(s) en cours"
+            android:textSize="14sp"
+            android:textColor="@color/material_on_surface_emphasis_medium"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Total des dettes -->
+        <TextView
+            android:id="@+id/txtTotalDette"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total dû : 150 000 FCFA"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bouton Voir avec Material Design -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVoirDettes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Voir toutes les dettes"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:icon="@drawable/ic_arrow_right"
+            app:iconGravity="end"
+            app:iconPadding="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
