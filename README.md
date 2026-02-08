@@ -116,15 +116,6 @@ utilisateurs (id, email, role, created_at)
 
 Configurer l'application
 
-Ouvrir config/SupabaseConfig.java
-
-Remplacer les constantes avec vos informations :
-
-java
-public static final String BASE_URL = "https://VOTRE_PROJET.supabase.co";
-public static final String API_KEY = "VOTRE_CLE_API_SUPABASE";
-Compiler et exécuter
-
 Ouvrir le projet dans Android Studio
 
 Synchroniser Gradle
