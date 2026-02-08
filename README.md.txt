@@ -186,7 +186,7 @@ Tester les scénarios d'erreur réseau
 
 Valider les calculs financiers
 
-📝 Bonnes pratiques appliquées
+ Bonnes pratiques appliquées
 Code
 Séparation des responsabilités
 
@@ -264,9 +264,9 @@ Tester les changements sur émulateur et appareil réel
 Projet académique - Université Jean Koudougou Zongo
 
  Auteurs
-Binôme de développement : [Nom Prénom 1, Nom Prénom 2]
+Binôme de développement : Ouedraogo Beatrice et  Ouedraogo Abdoul Razac
 
-Encadrant : Marcus Kaborét
+Encadrant : Marcus Kaboret
 
 Date : Janvier 2026
 
