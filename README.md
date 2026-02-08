@@ -72,13 +72,13 @@ UI : Material Design Components
 
 Structure des packages
 text
-bf.beatrice.carnet_dette/
-├── activities/           # Activités Android
-├── adapters/            # Adapteurs RecyclerView
-├── models/              # Modèles de données
-├── repository/          # Couche d'accès aux données
-├── api/                 # Client HTTP Supabase
-└── config/              # Configuration
+bf.beatrice.carnet_dette
+activities           # Activités Android
+adapters            # Adapteurs RecyclerView
+models              # Modèles de données
+repository          # Couche d'accès aux données
+api                # Client HTTP Supabase
+config              # Configuration
 Modèles de données
 Client : id, nom, prénom, téléphone, adresse
 
